@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.junit.Ignore;
 import static org.junit.Assert.*;
 
 import java.util.Arrays;
@@ -30,6 +31,7 @@ public class TodoListTest {
         assertEquals("Renew passport", item2.getDescription());
     }
     
+    
     @Test
     public void testSize() {
         assertEquals(0, todoList.size());
@@ -50,6 +52,7 @@ public class TodoListTest {
         assertEquals("Bake a cake", result.getDescription());
     }
     
+    @Ignore
     @Test
     public void testAllDone() {
         todoList.addItem("Drink tea", 5);
@@ -62,6 +65,7 @@ public class TodoListTest {
         assertNull(todoList.findFirstNotDone());
     }
     
+    @Ignore
     @Test
     public void testHighestPriorityNotDone() {
         todoList.addItem("Drink tea", 5);
@@ -74,6 +78,7 @@ public class TodoListTest {
         assertEquals("Buy milk", result.getDescription());
     }
     
+    @Ignore
     @Test
     public void testSearch() {
         todoList.addItem("Buy bread", 7);
